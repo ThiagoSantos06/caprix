@@ -1,0 +1,57 @@
+<main>
+    <section>
+        <div class="info1">
+            <img (click)="scrollToTop()" src="assets/images/CaprixLogo.png" alt="Logo Caprix" class="logo-caprix">
+            <p>Fazendo com capricho. Soluções profissionais para sua casa e empresa no Rio de Janeiro.</p>
+            <a href="" (click)="openWhatsApp()"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+        <div class="info2">
+            <h3>LINKS RÁPIDOS</h3>
+            <ul>
+                <li><a [routerLink]="['/']" fragment="feature" class="LINKS">Serviços</a></li>
+                <li><a [routerLink]="['/']" fragment="about-me" class="LINKS">Sobre</a></li>
+                <li><a [routerLink]="['/']" fragment="location" class="LINKS">Localização</a></li>
+                <li><a [routerLink]="['/']" fragment="contact" class="LINKS">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="info-3">
+            <h3>CONTATO</h3>
+            <div class="contact-info3">
+                <i class="bi bi-whatsapp icon-info3"></i>
+                <div class="content-infor3">
+                    <p class="contact-name">WhatsApp</p>
+                    <p class="contact-info">(21) 99999-8888</p>
+                </div>
+            </div>
+
+            <div class="contact-info3">
+                <i class="bi bi-clock icon-info3"></i>
+                <div class="content-infor3">
+                    <p class="contact-name">Atendimento</p>
+                    <p class="contact-info">Seg a Sáb, 7h às 18h</p>
+                </div>
+            </div>
+
+            <div class="contact-info3">
+                <i class="bi bi-geo-alt icon-info3"></i>
+                <div class="content-infor3">
+                    <p class="contact-name">Localização</p>
+                    <p class="contact-info">Rio de Janeiro, Niterói</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-4">
+            <h3>ORÇAMENTO GRÁTIS</h3>
+            <p>Solicite um orçamento sem comrpomisso pelo WhatsApp.</p>
+            <a (click)="openWhatsApp()"><i class="bi bi-whatsapp icon-button"></i>Chamar no WhatsApp</a>
+        </div>
+    </section>
+    
+    <div class="divisor">
+        <p>© 2026 Caprix. Todos os direitos reservados.</p>
+        <p>Feito com 💚 no Rio de Janeiro</p>
+    </div>
+</main>
