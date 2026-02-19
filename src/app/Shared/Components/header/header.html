@@ -1,0 +1,14 @@
+<header>
+    <div class="header-content">
+        <img (click)="scrollToTop()" src="assets/images/CaprixLogo.png" alt="Logo da Caprix" class="logo-header">
+        <nav>
+            <ul>
+                <li><a [routerLink]="['/']" fragment="feature">Serviços</a></li>
+                <li><a [routerLink]="['/']" fragment="about-me">Sobre</a></li>
+                <li><a [routerLink]="['/']" fragment="location">Localização</a></li>
+                <li><a [routerLink]="['/']" fragment="contact">Contato</a></li>
+            </ul>
+        </nav>
+        <a (click)="openWhatsApp()" class="orcamento-button">Orçamento</a>
+    </div>
+</header>
