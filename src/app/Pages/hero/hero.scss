@@ -93,3 +93,86 @@ section {
     color: var(--color-1);
     margin-top: 1rem;
 }
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 3rem;
+        width: 100%;
+        line-height: 3.5rem;
+    }
+
+    .paragraph {
+        width: 70%;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .button-1, .button-2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 756px) {
+    main {
+        width: 100%;
+    }
+
+    section {
+        background-image: linear-gradient(to right, rgba(34, 58, 58, 0.856), rgba(31, 56, 56, 0.226)), url('../../../../public/assets/images/hero-background.png');
+        background-size: cover;
+        background-position: center;
+        padding: 4rem 1.5rem; 
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 3rem;
+        width: 100%;
+        line-height: 3.5rem;
+    }
+
+    .paragraph {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .button-1, .button-2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+
+    .mini-title2 {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    .paragraph {
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+}

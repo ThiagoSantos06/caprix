@@ -1,14 +1,25 @@
 <header>
     <div class="header-content">
         <img (click)="scrollToTop()" src="assets/images/CaprixLogo.png" alt="Logo da Caprix" class="logo-header">
-        <nav>
+        
+        <div class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav [class.active]="isMenuOpen">
             <ul>
-                <li><a [routerLink]="['/']" fragment="feature">Serviços</a></li>
-                <li><a [routerLink]="['/']" fragment="about-me">Sobre</a></li>
-                <li><a [routerLink]="['/']" fragment="location">Localização</a></li>
-                <li><a [routerLink]="['/']" fragment="contact">Contato</a></li>
+                <li><a [routerLink]="['/']" fragment="feature" (click)="closeMenu()">Serviços</a></li>
+                <li><a [routerLink]="['/']" fragment="about-me" (click)="closeMenu()">Sobre</a></li>
+                <li><a [routerLink]="['/']" fragment="location" (click)="closeMenu()">Localização</a></li>
+                <li><a [routerLink]="['/']" fragment="contact" (click)="closeMenu()">Contato</a></li>
+                <li class="mobile-only">
+                    <a (click)="openWhatsApp(); closeMenu()" class="orcamento-button">Orçamento</a>
+                </li>
             </ul>
         </nav>
-        <a (click)="openWhatsApp()" class="orcamento-button">Orçamento</a>
+
+        <a (click)="openWhatsApp()" class="orcamento-button desktop-only">Orçamento</a>
     </div>
 </header>

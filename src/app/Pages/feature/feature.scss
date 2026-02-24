@@ -2,9 +2,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6rem 8rem;
+    padding: 4rem 5%;
     gap: 2rem;
     background-color: var(--color-9);
+    width: 100%;
 }
 
 .titles-main {
@@ -12,6 +13,9 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .services-paragraph {
@@ -25,15 +29,15 @@ section {
 .services-paragraph2 {
     color: var(--color-5);
     text-align: center;
-    width: 85%;
+    width: 100%;
+    max-width: 800px;
 }
 
 .locals-container {
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    max-width: 1200px;
     gap: 2rem;
 }
 
@@ -41,11 +45,12 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     border: 1px solid var(--color-6);
     height: 100%;
     transition: 0.2s;
+    background-color: var(--color-1);
 }
 
 .local-content:hover {
@@ -63,10 +68,39 @@ section {
     width: min-content;
     color: var(--color-1);
     border-radius: 1rem;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
+    flex-shrink: 0;
 }
 
 .local-content p {
     color: var(--color-7);
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .locals-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .locals-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-paragraph2 {
+        width: 100%;
+    }
+
+    .local-content {
+        padding: 1.2rem;
+    }
 }
