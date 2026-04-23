@@ -27,6 +27,7 @@
               }
             ],
             "styles": [
+              "primeicons/primeicons.css",
               "src/styles.scss"
             ]
           },
@@ -81,6 +82,7 @@
               }
             ],
             "styles": [
+              "primeicons/primeicons.css",
               "src/styles.scss"
             ]
           }
@@ -89,6 +91,6 @@
     }
   },
   "cli": {
-    "analytics": "fef64281-a7b7-41b7-a667-f408125d930b"
+    "analytics": false
   }
 }
