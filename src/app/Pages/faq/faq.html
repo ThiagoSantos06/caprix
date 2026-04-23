@@ -1,0 +1,30 @@
+<main id="faq">
+    <section>
+        <div class="container-texts">
+            <p class="texto-title">FAQ</p>
+            <h1 class="contact-title">Perguntas Frequentes</h1>
+            <p class="paragraph-title">Tire suas dúvidas sobre os serviçõs de faxina.</p>
+        </div>
+
+        <div class="faq-container">
+            <p-accordion>
+                @for (s of servicos; track s.id) {
+                <p-accordion-panel [value]="s.id">
+
+                    <p-accordion-header>
+                        <div class="container-question">
+                            <i class="bi bi-question-circle"></i>
+                            {{ s.titulo }}
+                        </div>
+                    </p-accordion-header>
+
+                    <p-accordion-content>
+                        {{ s.descricao }}
+                    </p-accordion-content>
+
+                </p-accordion-panel>
+                }
+            </p-accordion>
+        </div>
+    </section>
+</main>
